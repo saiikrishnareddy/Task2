@@ -1,0 +1,36 @@
+--Creating Table in School Database
+
+
+
+CREATE TABLE Student (
+    StudentID INTEGER PRIMARY KEY,
+    Firstname TEXT    NOT NULL,
+    Lastname  TEXT    NOT NULL,
+    Age       INTEGER,
+    Email
+);
+ 
+
+
+
+--Inserting Data
+
+INSERT INTO Student(StudentID,Firstname,Lastname,Age,Email) 
+VALUES(1, 'Sai', 'krishna', 20, NULL),
+(2, 'anjan', 'kumar', 22, NULL), 
+(3, 'pavan', 'sai', 19, 'pavan@gmail.com'),
+(4, 'B', 'Nani', NULL, 'Nani@gmail.com');
+
+
+--Updating Data
+
+
+UPDATE Student
+SET Age = 21
+WHERE StudentID = 1;
+
+
+--Deleting Data
+
+DELETE FROM Student
+WHERE StudentID = 4;
